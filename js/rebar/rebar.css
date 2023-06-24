@@ -1,0 +1,527 @@
+﻿.numericpad.rebar .numericpad-value {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 4px 8px 0px 8px;
+    padding: 5px 10px;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    color: #000;
+    border-radius: 5px;
+}
+
+.input-modes {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    height: 15%;
+    background-color: #CCC;
+}
+
+.input-mode {
+    background-color: #AAA;
+    color: #DDD;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 2px;
+    margin-right: 2px;
+    cursor: pointer;
+    flex-grow: 1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    line-height: 150%
+}
+
+.input-mode span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.rebarset-one-row  {
+    z-index: -1;
+    position: absolute;
+    opacity: 0;
+    width: calc(100% - 18px);
+    overflow-x: scroll;
+    overflow-y: hidden;
+    webkit-overflow-scrolling: touch;
+    height: 40px;
+    margin: 0 8px;
+    border-radius: 5px;
+    border-left: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+    white-space: nowrap;
+}
+
+.grid.portrait-numericpad .rebarset-one-row {
+    width: calc(100% - 28px);  
+}
+
+.rebarset-one-row::-webkit-scrollbar { 
+    display: none; 
+}
+
+.rebarset-one-row .rebarset-item  {
+    /*height: 85%;*/
+}
+
+.rebarset-two-rows {
+    z-index: -1;
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+}
+
+.rebarset-row {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    overflow-x: scroll;
+    overflow-y: hidden;   
+    height: 55%;
+}
+
+.rebarset-row .rebarset-item  {
+    height: 90%;
+}
+
+.rebarset-row::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+.rebarset-row::-webkit-scrollbar-thumb {
+    background-color:#808080;
+}
+
+.rebarset-one-row::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+.rebarset-one-row::-webkit-scrollbar-thumb {
+    background-color:#808080;
+}
+
+.rebarset-item {
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0px 10px;
+    cursor: pointer;
+    width: 45px;
+    margin: 1px;
+    display: inline-flex;
+    justify-content: center;
+    height: 36px;
+    align-items: center;
+
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(230,230,230,1) 100%);
+    color: #0D47A1;
+}
+
+.input-keys {
+    position: absolute;
+    top: 45px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.numericpad.rebar.bars .input-keys, .numericpad.rebar.spacing .input-keys {
+    top: 84px;
+}
+
+.fraction {
+    font-size: 70%;
+    line-height: 15px;
+}
+
+.operator {
+    display: inline;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.operator.light {
+    color: #CCC;
+}
+
+.area-view- {
+    padding: 10px 15px;
+    /* background: #FFF; */
+    color: #FFF;
+    border-bottom: 1px solid #444;
+    position: relative;
+}
+
+.area-view-extra {
+    padding: 5px;
+    background: #FFF;
+    color: #555;
+}
+
+.area-view- .area-view-name {
+    font-size: 18px;
+}
+
+.area-view- .area-view-value {
+    position: relative;
+    float: right;
+    font-size: 20px;
+}
+
+.area-view- .area-view-unit {
+    color: #888;
+    display: inline-block;
+}
+
+.area-view-extra .area-view-name {
+    font-size: 12px;
+}
+
+.area-view-extra .area-view-value {
+    position: relative;
+    float: right;
+    font-size: 15px;
+}
+
+.area-view-extra .area-view-unit {
+    font-size: 8px;
+}
+
+.area-view- .area-view-limit {
+    color: #888;
+    position: absolute;
+    display: inline-block;
+    right: 15px;
+}
+
+.bar-spa-title {
+    background-color: #EEE;
+    color: #333;
+    height: 100%;
+    padding: 0px;
+    text-transform: uppercase;
+    /* font-weight: bold; */
+}
+
+.bar-spa-title .name {
+
+}
+
+.bar-spa-title div {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    padding: 10px 0px 5px 0px;
+}
+
+.bar-spa-title div.highlight {
+    border-bottom: 10px solid #CCC;
+    font-weight: bold;
+}
+
+.bar-spa-title .value {
+    background-color: #FF9800;
+    border-radius: 100%;
+    color: #FFF;
+    float: right;
+    width: 20px;
+    height: 17px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 3px;
+    margin-top: -2px;
+    margin-right: 5px;
+    font-weight: normal;
+    font-size: 0.85em;
+}
+
+.rebar-selected-value-div {
+    background-color: white;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+}
+
+.rebar-selected-value-title-div {
+    white-space: nowrap;
+    flex-grow: 1;
+    padding-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    color: #0D47A1;
+    font-weight: bold;
+}
+
+.rebar-selected-value-div {
+    flex-grow: 2;
+    padding-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    color: red;
+    font-weight: bold;
+}
+
+.rebar-button-ok-div {
+    flex-grow: 1;
+    width: 15%;
+    padding-top: 7px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #0D47A1;
+    color: #FFF;
+    margin-bottom: 6px;
+    margin-right: 7px;
+
+}
+
+.numpad-value-mini {
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 3px 2px 1px 2px;
+    padding: 5px 10px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    height: 50px;
+}
+
+.input-bars-mini {
+    height: 150px;
+}
+
+.input-bar-mini {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    height: 150px;
+    width: 100%;
+}
+
+.input-bar-mini table {
+    height: 100%;
+    width: 100%;
+}
+
+.input-bar-table {
+    height: 100%;
+    width: 100%;
+}
+
+.input-bar-table td {
+    font-size: 18px;
+    border-radius: 15px;
+}
+
+.input-keys-mini {
+    height: 200px;
+}
+
+.input-keys-mini table {
+    height: 100%;
+    width: 100%;
+}
+
+.input-ok-mini {
+    height: 50px;
+    padding: 5px;
+}
+
+.input-ok-mini .rebar-button-ok-div {
+    width: 100%;
+    height: 30px;
+    margin: 0px;
+    padding-top: 10px;        
+}
+
+.rebar .disabled-key{
+    background-color: #CCC;
+    color: #AAA;
+    cursor: auto;
+}
+
+.numericpad .selected {
+    background-color: #EEE;
+    color: #00254d;
+    font-weight: bolder;
+}
+
+.input-bars {
+    line-height: 25px;
+    padding-top: 2px;
+    /*padding-left: 5px;*/
+}
+
+.property-list-item-top {
+    font-size: 16px;
+    font-weight: bold;
+    color: #0D47A1;
+}
+
+.property-list-item-bottom {
+    display: inline-block;
+    color: #777;
+}
+
+.property-list-item-limit {
+    position: absolute;
+    display: inline-block;
+    right: 15px;
+    top: 22px;
+}
+
+.property-list-item-limit .fa {
+    display: inline-block;
+    vertical-align: middle;
+    position: initial;
+    margin-right: 5px;
+    font-weight: normal;
+    color: #8BC34A;
+}
+
+.grid.content-area .rebar-mainview .list-thumbnail{
+    border: 1px solid #f1f1f1;
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    background-color: #fafafa;
+    -webkit-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.28);
+    -moz-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.28);
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.28);
+}
+
+.numericpad.rebar table {
+    border-collapse: separate;
+    border-spacing: 8px;
+    height: calc(100% - 45px);
+    margin: 0px;
+}
+
+.numericpad.rebar.bars table, .numericpad.rebar.spacing table {
+    margin-top: 35px;
+    height: calc(100% - 80px);
+}
+
+.grid .grid.output {
+    -webkit-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.28);
+    -moz-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.28);
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.28);
+}
+
+.grid.content-area .grid.output .container {
+    background-color: #FFF;
+    border-radius: 5px;
+}
+
+.header {
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+}
+
+.subtext {
+    font-weight: normal;
+    color: #888;
+    text-align: center;
+    padding: 0px 10px 20px 10px;
+    margin-bottom: -18px;
+    margin-top: 10px;
+}
+
+.numericpad.rebar td {
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(230,230,230,1) 100%);
+    color: #0D47A1;
+    font-weight: bold;
+} 
+
+.numericpad.rebar td.empty-key {
+    background-color: #FFF;
+    background: linear-gradient(to bottom, rgba(210,210,210,1) 0%, rgba(180,180,180,1) 100%);
+    cursor: default;
+}
+
+.numericpad.rebar {
+    border-radius: 0px 0px 5px 5px;
+    top: 0px;
+}
+
+.numericpad.rebar .special-key {
+    background-color: #2196F3;
+    background: linear-gradient(to bottom, #0D47A1 0%, #00254d 100%);
+    color: #FFF;
+}
+
+.drawer .toolbar {
+    background-color: inherit;
+    border-bottom: 1px solid #CCC;
+}
+
+.grid.toolbar-grid {
+    border-bottom: none;
+}
+
+.bar-count, .bar-size {
+    color: #CCC;
+    display: inline-block;
+}
+
+.list-user.back-image {
+    border-bottom: none;
+}
+
+.drawer.slide-left-show .property-category {
+    border-bottom: 1px solid #CCC;
+    border-top: 1px solid #CCC;
+}
+
+.drawer.slide-left-show .list-button:nth-child(7) {
+    border-bottom: none;
+}
+
+.grid.portrait-numericpad, .grid.portrait-numericpad .grid {
+    background-color: #cacaca;
+}
+
+.grid.portrait-numericpad .numericpad {
+    width: 400px;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+
+.list-button.no-options {
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    text-align: center;
+    position: absolute;
+    top: calc(50% - 37px);
+    left: 20%;
+    width: 60%;
+}
+
+.list-button.no-options .fa {
+    color: #F00;
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+.list-button.no-options .fa.fa-info-circle {
+    color: #0D47A1;
+}

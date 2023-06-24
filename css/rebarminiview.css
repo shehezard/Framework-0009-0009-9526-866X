@@ -1,0 +1,49 @@
+.numericpad.rebar {
+
+}
+
+.numericpad.rebar .numpad-value-mini {
+    background-color: #FFF;
+    border: 0.5px solid #CCC;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 3px 2px 0.5px 2px;
+    padding: 10px;
+    position: relative;
+    border-radius: 5px;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.numericpad.rebar .numpad-value-mini div{
+    text-align: right;
+    display: inline;
+}
+
+.numericpad.rebar .input-bars-mini {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 52px;
+    height: 100px;
+}
+
+.numericpad.rebar .input-bars-mini .input-bar-mini{
+    height: 100%;
+}
+
+.numericpad.rebar .input-bars-mini .input-bar-mini table{
+    height: 100%;
+}
+
+.numericpad.rebar .input-keys-mini {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 152px;
+    bottom: 42px;
+}
+
+.numericpad.rebar .input-keys-mini table{
+    height: 100%;
+}

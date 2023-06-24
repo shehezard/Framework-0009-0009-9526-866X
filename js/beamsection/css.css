@@ -1,0 +1,136 @@
+.beam-view {
+    background-color: #FFF;
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    top: calc(50% - 150px);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+    text-align: center;
+}
+
+.beam-view-section:hover {
+    border: 1px solid #E3F2FD;
+    background-color: #E3F2FD;
+}
+
+.beam-view-section {
+    border: 1px solid #FFF;
+    display: inline-block;
+    margin: 30px 10px 10px 10px;
+    padding: 10px;
+}
+
+.beam-view-section img{
+    height: 192px;
+}
+
+.beam-view-text {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #0D47A1;
+}
+
+.beam-background {
+    background: url('../../icons/beamsection/back.svg') #90CAF9;
+    background-size: 100% 100%;
+}
+
+@media (max-width: 736px) {
+    .beam-view {
+        background-color: transparent;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        top: calc(50% - 120px);
+    }
+
+    .beam-view-section {
+        background-color: #FFF;
+        margin: 10px;
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+    }
+
+    .beam-view-section img{
+        height: 150px;
+    }
+}
+
+@media (max-width: 736px) and (max-height: 420px) {
+    .beam-view {
+        background-color: transparent;
+        height: 450px;
+        top: calc(50% - 110px);
+    }
+
+    .beam-view-section {
+        background-color: #FFF;
+        margin: 10px;
+    }
+
+    .beam-view-section img{
+        height: 150px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .beam-view {
+        background-color: transparent;
+        height: 450px;
+        top: calc(50% - 225px);
+    }
+
+    .beam-view-section {
+        background-color: #FFF;
+        margin: 10px;
+    }
+
+    .beam-view-section img{
+        height: 150px;
+    }
+}
+
+@media (max-width: 400px) {
+    .beam-view {
+        background-color: transparent;
+        height: 450px;
+        top: calc(50% - 225px);
+    }
+
+    .beam-view-section {
+        background-color: #FFF;
+        margin: 10px;
+        padding: 10px 0px;
+    }
+
+    .beam-view-section img{
+        height: 120px;
+        width: 120px;
+    }
+
+    .toolbar-bottom .toolbar-button {
+        margin: 7px 1px 5px 1px;
+    }
+}
+
+@media (max-width: 570px) and (max-height: 325px) {
+    .beam-view {
+        background-color: transparent;
+        height: 450px;
+        top: calc(50% - 110px);
+    }
+
+    .beam-view-section {
+        background-color: #FFF;
+        margin: 10px;
+        padding: 10px 0px;
+    }
+
+    .beam-view-section img{
+        height: 150px;
+    }
+}
